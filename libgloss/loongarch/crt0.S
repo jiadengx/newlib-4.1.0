@@ -15,11 +15,11 @@ _start:
   la      ra, memset
   jirl    ra, ra, 0
 
-  la      a0, __libc_fini_array   # Register global termination functions
+  la      a0, __libc_csu_fini   # Register global termination functions
   la      ra, atexit
   jirl    ra, ra, 0                  #  to be called upon exit
 
-  la      ra, __libc_init_array       # Run global initialization functions
+  la      ra, __libc_csu_init       # Run global initialization functions
   jirl    ra, ra, 0
 
   ld.d    a0, sp, 0                  # a0 = argc

@@ -1,12 +1,10 @@
+#include <machine/syscall.h>
 #include <errno.h>
 
-#undef errno
-extern int  errno;
-
-int
-_wait (int *status)
+/* Wait for a child process. Minimal implementation for a system without
+   processes just causes an error.  */
+int _wait(int *status)
 {
   errno = ECHILD;
-  return -1;                    /* Always fails */
-
-}       /* _wait () */
+  return -1;
+}
