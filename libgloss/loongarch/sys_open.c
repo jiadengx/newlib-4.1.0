@@ -1,9 +1,10 @@
 #include <machine/syscall.h>
 #include "internal_syscall.h"
 
+#define AT_FDCWD -100
 /* Open a file.  */
 int
 _open(const char *name, int flags, int mode)
 {
-  return syscall_errno (SYS_openat, 3, name, flags, mode, 0, 0, 0);
+  return syscall_errno (SYS_openat, 4, AT_FDCWD, name, flags, mode, 0, 0);
 }
