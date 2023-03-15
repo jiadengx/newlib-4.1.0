@@ -1,7 +1,7 @@
 #include <machine/syscall.h>
 #include "internal_syscall.h"
+#include <fcntl.h>
 
-#define AT_FDCWD -100
 /* Open a file.  */
 int
 _open(const char *name, int flags, int mode)

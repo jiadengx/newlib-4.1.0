@@ -1,7 +1,7 @@
 #include <machine/syscall.h>
 #include "internal_syscall.h"
+#include <fcntl.h>
 
-#define AT_FDCWD -100
 /* Remove a file's directory entry.  */
 int
 _unlink(const char *name)

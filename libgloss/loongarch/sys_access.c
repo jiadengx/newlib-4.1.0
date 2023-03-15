@@ -1,7 +1,7 @@
 #include <machine/syscall.h>
 #include "internal_syscall.h"
+#include <fcntl.h>
 
-#define AT_FDCWD -100
 /* Permissions of a file (by name).  */
 int
 _access(const char *file, int mode)
