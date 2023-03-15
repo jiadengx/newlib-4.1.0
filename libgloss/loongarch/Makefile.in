@@ -36,9 +36,10 @@ gloss_srcs = \
 	sys_sysconf.c \
 	sys_times.c \
 	sys_unlink.c \
-	sys_utime.c \
 	sys_wait.c \
 	sys_write.c \
+	sys_rename.c \
+	sys_utime.c \
 	errno.c \
 	elf_init.c \
 
