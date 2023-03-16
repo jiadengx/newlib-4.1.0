@@ -19,8 +19,6 @@ gloss_srcs = \
 	sys_fork.c \
 	sys_fstatat.c \
 	sys_fstat.c \
-	sys_ftime.c \
-	sys_getcwd.c \
 	sys_getpid.c \
 	sys_gettimeofday.c \
 	sys_isatty.c \
