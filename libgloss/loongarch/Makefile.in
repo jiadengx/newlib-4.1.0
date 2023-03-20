@@ -39,7 +39,6 @@ gloss_srcs = \
 	sys_rename.c \
 	sys_utime.c \
 	errno.c \
-	elf_init.c \
 
 # Extra files
 
