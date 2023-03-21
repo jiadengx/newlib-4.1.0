@@ -38,7 +38,6 @@ gloss_srcs = \
 	sys_write.c \
 	sys_rename.c \
 	sys_utime.c \
-	errno.c \
 
 # Extra files
 

@@ -2,6 +2,8 @@
 #define _INTERNAL_SYSCALL_H
 
 #include <errno.h>
+#undef errno
+extern int errno;
 
 static inline long
 __syscall_error(long a0)
