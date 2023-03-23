@@ -36,8 +36,8 @@ _start:
   addi.d  a1, sp, __SIZEOF_POINTER__ # a1 = argv
   li.d    a2, 0                      # a2 = envp = NULL
   la.global  ra, main
-  jirl ra, ra, 0
+  jirl    ra, ra, 0
 
   la.global  ra, exit
-  jirl zero, ra, 0
+  jirl    zero, ra, 0
   .size  _start, .-_start
