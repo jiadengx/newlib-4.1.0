@@ -33,7 +33,7 @@ _start:
   jirl    ra, ra, 0
 
   ld.d    a0, sp, 0                  # a0 = argc
-  addi.d  a1, sp, __SIZEOF_POINTER__ # a1 = argv
+  addi.d  a1, sp, SZREG              # a1 = argv
   li.d    a2, 0                      # a2 = envp = NULL
   la.global  ra, main
   jirl    ra, ra, 0
